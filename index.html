@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Boo — AI Video Player</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #24292f;
+      background-color: #f6f8fa;
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 10px;
+      margin-top: 0;
+      color: #1f2328;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      border-bottom: 1px solid #eaeef2;
+      padding-bottom: 6px;
+      color: #1f2328;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      color: #24292f;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      background-color: #eff1f3;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 88%;
+      color: #0969da;
+    }
+    a {
+      color: #0969da;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .meta-box {
+      background-color: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for Boo — AI Video Player</h1>
+    
+    <div class="meta-box">
+      <strong>Last Updated:</strong> September 30, 2026<br>
+      <strong>Developer:</strong> 6AM STUDIO<br>
+      <strong>Application:</strong> Boo — AI Video Player (<code>com.sixamstudio.boo</code>)<br>
+      <strong>Contact:</strong> <a href="mailto:6amstudio.dev@gmail.com">6amstudio.dev@gmail.com</a>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to Boo — AI Video Player ("we," "our," or "the App"), developed by 6AM STUDIO. We are committed to protecting your privacy. This Privacy Policy explains how our application accesses, uses, and safeguards information when you use the Boo mobile and desktop application.</p>
+    <p>By installing and using Boo, you agree to the practices described in this Privacy Policy.</p>
+
+    <h2>2. Information We Access and How We Use It</h2>
+
+    <h3>A. Local Storage &amp; Media Files Access</h3>
+    <ul>
+      <li><strong>Permissions Used:</strong> <code>READ_MEDIA_VIDEO</code>, <code>READ_EXTERNAL_STORAGE</code>, <code>MANAGE_EXTERNAL_STORAGE</code> (All Files Access).</li>
+      <li><strong>Purpose:</strong> Boo is an offline-capable video and media player. We access local storage strictly to:
+        <ol>
+          <li>Discover and display your local video files in organized folder hierarchies.</li>
+          <li>Locate and load external subtitle files (<code>.srt</code>, <code>.vtt</code>) placed alongside your video files.</li>
+          <li>Save locally cached Sinhala subtitle translations to your device for instant offline playback.</li>
+        </ol>
+      </li>
+      <li><strong>Important Notice:</strong> Your video and audio files NEVER leave your device. We do not upload, stream, copy, or transmit your personal videos or photos to any external server.</li>
+    </ul>
+
+    <h3>B. AI Subtitle Translation (Google Gemini)</h3>
+    <ul>
+      <li><strong>What is Processed:</strong> When you select or auto-generate Sinhala subtitles, the plain text dialogue lines from the subtitle file (<code>.srt</code> / <code>.vtt</code>) are transmitted to the Google Gemini API (<code>generativelanguage.googleapis.com</code>) to generate natural Sinhala translations.</li>
+      <li><strong>What is NOT Sent:</strong> No video files, no audio streams, no file names, and no personal user information are ever sent to Google Gemini.</li>
+      <li><strong>Third-Party Policy:</strong> AI dialogue processing complies with Google's API Terms of Service and Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.</li>
+    </ul>
+
+    <h3>C. Online Subtitle Search</h3>
+    <ul>
+      <li>If you enable "Auto-Search Online Subtitles" in Settings, the app may query public movie database search endpoints (such as OpenSubtitles CDN / IMDb) using the movie title to retrieve matching subtitle files.</li>
+      <li>Personal camera recordings and home videos are filtered out and excluded from online subtitle searches.</li>
+    </ul>
+
+    <h3>D. User Settings &amp; Watch History</h3>
+    <ul>
+      <li>The app stores your watch history (playback resume position), subtitle visual preferences (font size, color, timing offsets), and optional custom Gemini API keys locally on your device via secure SharedPreferences.</li>
+      <li>This data is stored strictly on your local device and is never shared, synced, or sold.</li>
+      <li>You can delete all locally stored data at any time via <strong>Settings &rarr; Privacy &amp; Data Controls &rarr; "Clear Watch History &amp; Saved Key"</strong>.</li>
+    </ul>
+
+    <h2>3. Data Collection and Tracking</h2>
+    <ul>
+      <li><strong>No Account Creation:</strong> You are not required to create an account or provide personal information to use Boo.</li>
+      <li><strong>No Analytics / No Ad Tracking:</strong> Boo does not collect personally identifiable information (PII) or track your location.</li>
+      <li><strong>No Data Selling:</strong> We do not sell, rent, or monetize your personal data or viewing habits.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Boo interacts with the following third-party APIs solely to provide core media functionality:</p>
+    <ol>
+      <li><strong>Google Gemini Generative AI (Google LLC):</strong> For real-time subtitle translation into Sinhala.</li>
+      <li><strong>OpenSubtitles / Stremio CDN:</strong> For public movie subtitle retrieval.</li>
+    </ol>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Boo does not knowingly collect or solicit any personal information from children under the age of 13. Because the app functions as a local media player without user accounts or tracking, it is safe for general audiences.</p>
+
+    <h2>6. Security of Your Information</h2>
+    <p>We prioritize your privacy by keeping media playback and watch history entirely on your local device. Network communication for AI translation and subtitle downloads is conducted over secure encrypted HTTPS connections (TLS/SSL).</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any updates will be posted with a revised "Last Updated" date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+    <ul>
+      <li><strong>Developer:</strong> 6AM STUDIO</li>
+      <li><strong>Email:</strong> <a href="mailto:6amstudio.dev@gmail.com">6amstudio.dev@gmail.com</a></li>
+    </ul>
+  </div>
+</body>
+</html>
